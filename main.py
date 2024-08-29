@@ -50,6 +50,7 @@ class Student:
             course.showInfo()
         
 def main():
+    # Create courses
     course1 = Course(1, "NodeJS Fullstack", "Full time", 99999000)
     course2 = Course(2, "Computer Science", "Part time", 88999000)
 
@@ -60,6 +61,7 @@ def main():
     
     print("-----------------")
     
+    # Create students
     student1 = Student(1, "Joe", "01/01/1999")
     student2 = Student(2, "Bob", "02/02/1990")
 
@@ -68,6 +70,7 @@ def main():
     
     print("-----------------")
 
+    # Register courses
     student1.registerCourse(course1)
     student1.registerCourse({"id": 1, "name": "NodeJS Fullstack", "format": "Full time", "fee": 99999000})
     student1.registerCourse(course1)
@@ -79,6 +82,7 @@ def main():
     print("-----------------")
     print("\n")
 
+    # Print course info
     student1.showCourses()
     print("\n")
     student2.showCourses()
